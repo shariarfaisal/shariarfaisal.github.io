@@ -17,7 +17,7 @@ function Footer(props) {
               <ul className="nav flex-column">
                 <li className="nav-item"><a href="#skills">Skills</a></li>
                 <li className="nav-item"><a href="#projects">Projects</a></li>
-                <li className="nav-item"><a href="/gallery.html#gallery">Gallery</a></li>
+                <li className="nav-item"><a href="#gallery">Gallery</a></li>
               </ul>
             </div>
             <div className="col-sm-2 d-flex">

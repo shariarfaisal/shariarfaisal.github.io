@@ -10,8 +10,8 @@ function Media({ video, title, images }) {
           video &&
           <div className="row mx-0 justify-content-center">
             <iframe
-              title={title+Math.random()}
-              className="my-3 col-md-10"
+              title={title}
+              className="my-3 col-md-10 border"
               style={{width: '100%',minHeight: '350px'}}
               src={video}
               frameBorder="0"
