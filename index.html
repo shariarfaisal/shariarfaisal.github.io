@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=PT+Serif:wght@400;700&family=Quicksand:wght@400;500&family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Sharia Emon Faisal</title>
   </head>
@@ -16,9 +15,9 @@
 
       <section id="profile" class="py-5">
         <div class="container">
-          <div class="row-default">
+          <div class="row mx-0">
             <div class="col-md-4 my-3 my-md-0 d-flex justify-content-center">
-              <img id="profile-picture" class="circle" src="" width="200px" height="200px" alt="">
+              <img id="profile-picture" class="rounded-circle" src="img/profile.jpg" width="200px" height="200px" alt="Faisal">
             </div>
             <div class="about col-md-8">
               <h1 class="name mt-0">Sharia Emon Faisal</h1>
@@ -29,48 +28,70 @@
         </div>
       </section>
 
-      <section id="social_links" class="blue-grey lighten-5 py-4">
-        <div class="container row-default justify-content-between align-items-center">
-          <div class="col-sm-6">
-            <ul class="ml-md-5 my-0 my-md-2">
-              <li class="py-1">
-                <a target="_blank" href="mailto:faisaljr623@gmail.com">
-                  <i class="cyan-text darken-1 fa fa-envelope"></i> <span class="body">faisaljr623@gmail.com</span>
-                </a>
-              </li>
-              <li class="py-1">
-                <a class="d-sm-none" target="_blank" href="tel:+8801822531439">
-                  <i class="cyan-text darken-1 fa fa-mobile"></i> <span class="body">+8801822531439</span>
-                </a>
-                <span class="d-none d-sm-block">
-                  <i class="cyan-text darken-1 fa fa-mobile"></i>
-                  <span class="body">+8801822531439</span>
-                </span>
-              </li>
-              <li class="py-1">
-                <span>
-                  <i class="cyan-text darken-1 fa fa-map-marker"></i> <span class="body">Feni, Chattagram, Bangladesh</span>
-                </span>
-              </li>
-              <li class="py-1">
-                <a target="_blank" href="https://shariarfaisal.github.io">
-                  <i class="cyan-text darken-1 fa fa-link"></i> <span class="body">shariarfaisal.github.io</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-6">
-            <ul class="ml-md-5 my-0 my-md-2">
-              <li class="py-1"><a target="_blank" href="https://facebook.com/xfa1sal"><i class="cyan-text darken-1 fa fa-facebook"></i><span class="body">facebook.com/xfa1sal </span></a></li>
-              <li class="py-1"><a target="_blank" href="https://linkedin.com/in/shariarfaisal"><i class="cyan-text darken-1 fa fa-linkedin"></i> <span class="body">linkedin.com/in/shariarfaisal</span></a></li>
-              <li class="py-1"><a target="_blank" href="https://twitter.com/cyberjuncky"><i class="cyan-text darken-1 fa fa-twitter"></i><span class="body"> twitter.com/cyberjuncky</span></a></li>
-              <li class="py-1"><a target="_blank" href="https://github.com/shariarfaisal"><i class="cyan-text darken-1 fa fa-github"></i> <span class="body">github.com/shariarfaisal</span></a></li>
-            </ul>
+      <section id="social_links" class="blue-grey lighten-5 py-4" style="background: #eceff1 !important;">
+        <div class="container">
+          <div class="row mx-0">
+            <div class="col-sm-6">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="text-dark" target="_blank" href="mailto:faisaljr623@gmail.com">
+                    <i class="bx text-primary bx-envelope"></i> <span class="body">faisaljr623@gmail.com</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="d-sm-none text-dark" target="_blank" href="tel:+8801822531439">
+                    <i class="bx text-primary bx-phone"></i> <span class="body">+8801822531439</span>
+                  </a>
+                  <span class="d-none d-sm-block text-dark">
+                    <i class="bx text-primary bx-phone"></i>
+                    <span class="body">+8801822531439</span>
+                  </span>
+                </li>
+                <li class="nav-item">
+                  <span class="text-dark">
+                    <i class="bx text-primary bx-location-plus"></i> <span class="body">Feni, Chattagram, Bangladesh</span>
+                  </span>
+                </li>
+                <li class="nav-item">
+                  <a class="text-dark" target="_blank" href="https://shariarfaisal.github.io">
+                    <i class="bx text-primary bx-link"></i> <span class="body">shariarfaisal.github.io</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="text-dark" target="_blank" href="https://facebook.com/xfa1sal">
+                    <i class="bx text-primary bxl-facebook"></i>
+                    <span class="body">facebook.com/xfa1sal </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-dark" target="_blank" href="https://linkedin.com/in/shariarfaisal">
+                    <i class="bx text-primary bxl-linkedin"></i>
+                    <span class="body">linkedin.com/in/shariarfaisal</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-dark" target="_blank" href="https://twitter.com/cyberjuncky">
+                    <i class="bx text-primary bxl-twitter"></i>
+                    <span class="body"> twitter.com/cyberjuncky</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-dark" target="_blank" href="https://github.com/shariarfaisal">
+                    <i class="bx text-primary bxl-github"></i>
+                    <span class="body">github.com/shariarfaisal</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="experences" class="py-4">
+      <!-- <section id="experences" class="py-4">
         <div class="container">
           <h1 class="title-1">Experences</h1>
           <div class="item">
@@ -78,244 +99,179 @@
             <p class="item-body text-muted">I don't have any job experience yet but I have done so many experimental projects, followed by monolithic architecture but I am interested in microservice. Some of those projects available on my github. I am familiar designing and developing websites using React, Node.Js, Rest API, GraphQL API, Unite Testing, Integration Testing etc.. </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section id="skills" class="py-4 bg-light">
         <div class="container">
-          <h1 class="title-1">Skills</h1>
-          <div class="row-default justify-content-between">
-            <div class="col-md-4">
-              <div class="py-2">
-                <h3 class="title-2">Top Languages</h3>
-                <ul>
-                  <li class="skills-category">
-                    <div class="skills-category--title">JavaScript</div>
-                    <div class="skills-category--icons">
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                    </div>
-                  </li>
-                  <li class="skills-category">
-                    <div class="skills-category--title">Node JS</div>
-                    <div class="skills-category--icons">
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                    </div>
-                  </li>
-                  <li class="skills-category">
-                    <div class="skills-category--title">Golang</div>
-                    <div class="skills-category--icons">
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                    </div>
-                  </li>
-                  <li class="skills-category">
-                    <div class="skills-category--title">Python</div>
-                    <div class="skills-category--icons">
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                    </div>
-                  </li>
-                </ul>
+          <h1 class="title-1">Skill Set</h1>
+          <div class="row mx-0 justify-content-center">
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+              <div class="item">
+                <i class="bx bxl-javascript bx-md d-block"></i>
+                <span class="d-block">JavaScript</span>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="py-2">
-                <h3 class="title-2">Library & Frameworks</h3>
-                <ul>
-                  <li class="skills-category">
-                    <div class="skills-category--title">React.Js</div>
-                    <div class="skills-category--icons">
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                    </div>
-                  </li>
-                  <li class="skills-category">
-                    <div class="skills-category--title">Express.Js</div>
-                    <div class="skills-category--icons">
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                    </div>
-                  </li>
-                  <li class="skills-category">
-                    <div class="skills-category--title">TypeScript.Js</div>
-                    <div class="skills-category--icons">
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                    </div>
-                  </li>
-                  <li class="skills-category">
-                    <div class="skills-category--title">Nest.Js</div>
-                    <div class="skills-category--icons">
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                    </div>
-                  </li>
-                </ul>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+              <div class="item">
+                <i class="bx bxl-nodejs bx-md d-block"></i>
+                <span class="d-block">Node JS</span>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="py-2">
-                <h3 class="title-2">Database & Query Languages</h3>
-                <ul>
-                  <li class="skills-category">
-                    <div class="skills-category--title">MongoDB</div>
-                    <div class="skills-category--icons">
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                    </div>
-                  </li>
-                  <li class="skills-category">
-                    <div class="skills-category--title">MySql</div>
-                    <div class="skills-category--icons">
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                    </div>
-                  </li>
-                  <li class="skills-category">
-                    <div class="skills-category--title">PostgresDB</div>
-                    <div class="skills-category--icons">
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                    </div>
-                  </li>
-                  <li class="skills-category">
-                    <div class="skills-category--title">GraphQL</div>
-                    <div class="skills-category--icons">
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                    </div>
-                  </li>
-                  <li class="skills-category">
-                    <div class="skills-category--title">SQL</div>
-                    <div class="skills-category--icons">
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-dark">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                      <i class="material-icons text-light">fiber_manual_record</i>
-                    </div>
-                  </li>
-                </ul>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+              <div class="item">
+                <i class="bx bxl-react bx-md d-block"></i>
+                <span class="d-block">React JS</span>
               </div>
             </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+              <div class="item">
+                <img src="./img/typescript.png" width="36px" alt="TypeScript">
+                <span class="d-block">TypeScript</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+              <div class="item">
+                <img src="./img/express.svg" width="36px" alt="">
+                <span class="d-block">Express JS</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+              <div class="item">
+                <img src="./img/nestjs.png" width="36px" alt="">
+                <span class="d-block">Nest JS</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+              <div class="item">
+                <img src="./img/api.png" width="36px" alt="">
+                <span class="d-block">Restful API</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+              <div class="item">
+                <img src="./img/graphql.svg" width="36px" alt="">
+                <span class="d-block">GraphQL</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+              <div class="item">
+                <img src="./img/golang.png" width="36px" alt="">
+                <span class="d-block">Golang</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+              <div class="item">
+                <img src="./img/sql.png" width="36px" alt="">
+                <span class="d-block">SQL</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+              <div class="item">
+                <img src="./img/mongodb.png" width="36px" alt="">
+                <span class="d-block">MongoDB</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+              <div class="item">
+                <img src="./img/postgres.png" width="36px" alt="">
+                <span class="d-block">Postgres</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+              <div class="item">
+                <img src="./img/docker.png" width="36px" alt="">
+                <span class="d-block">Docker</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
-      <section id="projects" class="py-4" style="min-height: 400px;">
+      <section id="projects" class="py-4 bg-a">
         <div class="container">
-          <h1 class="title-1">Projects</h1>
-          <div class="row-default projects-wrapper">
-            <!-- Initial spinner ... -->
-            <div class="col-12 flex-center">
-              <div class="preloader-wrapper small active">
-                <div class="spinner-layer spinner-blue">
-                  <div class="circle-clipper left">
-                    <div class="circle"></div>
-                  </div><div class="gap-patch">
-                    <div class="circle"></div>
-                  </div><div class="circle-clipper right">
-                    <div class="circle"></div>
-                  </div>
-                </div>
+          <h2 class="title-1">Works</h2>
+          <div class="projects-container row mx-0 justify-content-center">
 
-                <div class="spinner-layer spinner-red">
-                  <div class="circle-clipper left">
-                    <div class="circle"></div>
-                  </div><div class="gap-patch">
-                    <div class="circle"></div>
-                  </div><div class="circle-clipper right">
-                    <div class="circle"></div>
-                  </div>
+            <div class="col-xl-10 my-3 bg-light">
+              <div class="p-3">
+                <h3 class="title-2">There will be title of this project</h3>
+                <p class="text-muted text">Here would be description of this project.</p>
+                <div class="repos">
+                  <h4 class="title-3">GitHub Repos</h4>
+                  <ul>
+                    <li>
+                      <span>One:</span>
+                      <a href="#">https://localhost.com</a>
+                    </li>
+                    <li>
+                      <span>Two: </span>
+                      <a href="#">https://localhost.com</a>
+                    </li>
+                    <li>
+                      <span>Three</span>
+                      <a href="#">https://localhost.com</a>
+                    </li>
+                  </ul>
                 </div>
-
-                <div class="spinner-layer spinner-yellow">
-                  <div class="circle-clipper left">
-                    <div class="circle"></div>
-                  </div><div class="gap-patch">
-                    <div class="circle"></div>
-                  </div><div class="circle-clipper right">
-                    <div class="circle"></div>
-                  </div>
+                <div class="row my-3 mx-0">
+                  <small class="py-2 px-3 m-2 bg-light text-info border rounded shadow-sm">ReactJS</small>
+                  <small class="py-2 px-3 m-2 bg-light text-info border rounded shadow-sm">NodeJS</small>
+                  <small class="py-2 px-3 m-2 bg-light text-info border rounded shadow-sm">Express JS</small>
+                  <small class="py-2 px-3 m-2 bg-light text-info border rounded shadow-sm">MongoDB</small>
+                  <small class="py-2 px-3 m-2 bg-light text-info border rounded shadow-sm">GraphQL</small>
+                  <small class="py-2 px-3 m-2 bg-light text-info border rounded shadow-sm">Docker</small>
                 </div>
-
-                <div class="spinner-layer spinner-green">
-                  <div class="circle-clipper left">
-                    <div class="circle"></div>
-                  </div><div class="gap-patch">
-                    <div class="circle"></div>
-                  </div><div class="circle-clipper right">
-                    <div class="circle"></div>
-                  </div>
-                </div>
+                <iframe style="width: 100%;min-height: 350px;" src="https://embed.storyxpress.co/embed/kh3nzfp5ecdqdwfbh" frameborder="0" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen allow="autoplay; geolocation" ></iframe>
               </div>
             </div>
+
+
           </div>
         </div>
       </section>
-
 
       <section id="footer">
         <div class="footer-box py-3 border-top bg-light">
           <div class="container">
-            <div class="row-default text-center">
-              <div class="col-sm-4">
-                <ul>
-                  <li><a href="#profile">Profile</a></li>
-                  <li><a href="#social_links">Contact</a></li>
-                  <li><a href="#experences">Experences</a></li>
+            <div class="row mx-0 text-center">
+              <div class="col-sm-4 d-flex">
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a href="#profile">Profile</a></li>
+                  <li class="nav-item"><a href="#social_links">Contact</a></li>
+                  <li class="nav-item"><a href="#experences">Experences</a></li>
                 </ul>
               </div>
-              <div class="col-sm-4">
-                <ul>
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="/gallery.html#gallery">Gallery</a></li>
+              <div class="col-sm-4 d-flex">
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a href="#skills">Skills</a></li>
+                  <li class="nav-item"><a href="#projects">Projects</a></li>
+                  <li class="nav-item"><a href="/gallery.html#gallery">Gallery</a></li>
                 </ul>
               </div>
-              <div class="col-sm-2">
-                <ul class="d-flex flex-row flex-sm-column justify-content-center">
-                  <li class="px-2"><a target="_blank" href="https://facebook.com/xfa1sal"><span><i class="fa fa-facebook"></i></span></a></li>
-                  <li class="px-2"><a target="_blank" href="https://linkedin.com/in/shariarfaisal"><span><i class="fa fa-linkedin"></i></span></a></li>
-                  <li class="px-2"><a target="_blank" href="https://twitter.com/cyberjuncky"><span><i class="fa fa-twitter"></i></span></a></li>
-                  <li class="px-2"><a target="_blank" href="https://github.com/shariarfaisal"><span><i class="fa fa-github"></i></span></a></li>
+              <div class="col-sm-2 d-flex">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a target="_blank" href="https://facebook.com/xfa1sal">
+                      <span><i class="bx bxl-facebook"></i></span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a target="_blank" href="https://linkedin.com/in/shariarfaisal">
+                      <span><i class="bx bxl-linkedin"></i></span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a target="_blank" href="https://twitter.com/cyberjuncky">
+                      <span><i class="bx bxl-twitter"></i></span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a target="_blank" href="https://github.com/shariarfaisal">
+                      <span><i class="bx bxl-github"></i></span>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -328,12 +284,8 @@
 
     </div>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript">
-      M.AutoInit();
-    </script>
+    <script type="text/javascript" src="js/projects.js"></script>
   </body>
 </html>

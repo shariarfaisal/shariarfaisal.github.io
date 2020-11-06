@@ -1,7 +1,3 @@
-@import 'bootstrap/typography';
-@import 'bootstrap/typography2';
-@import 'bootstrap/row';
-@import 'bootstrap/display';
 
 /*
 font-family: 'Abel', sans-serif;
@@ -16,25 +12,44 @@ html{
 
 .title-1{
   font-family: 'Tenali Ramakrishna', sans-serif;
-  font-size: 35px;
+  font-size: 38px;
   margin-top: 20px;
   letter-spacing: 1px;
   font-weight: 500;
 }
+
 .title-2{
   font-family: 'Tenali Ramakrishna', sans-serif;
   margin: 0;
-  font-size: 22px;
+  font-size: 25px;
 }
+
+.title-3{
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  margin: 0;
+  font-size: 20px;
+}
+
+.bg-a{
+  background: #eceff1 !important;
+}
+
+
 .flex-center{display: flex;justify-content: center;align-items: center;}
+
 .pointer{
   cursor: pointer;
+  &:hover{
+    opacity: .6;
+  }
 }
+
 .hover-link{
   &:hover{
     text-decoration: underline;
   }
 }
+
 .customScroll{
   overflow-y: auto;
 }
@@ -55,6 +70,7 @@ html{
 .text-dark{
   color: #455a64 !important;
 }
+
 .text-light{
   color: #b0bec5 !important;
 }
@@ -75,6 +91,8 @@ html{
     .about-me{
       font-family: 'Quicksand', sans-serif;
       color: #545454;
+      font-size: 15px;
+      margin-top: 10px;
     }
   }
 }
@@ -110,42 +128,22 @@ html{
 }
 
 
-#experences{
-  .item{
-    margin: 10px 0;
-    .icon{font-size: 14px;}
-    &-body{
-      margin: 0;
-      padding: 0;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 14px;
-      padding-left: 10px;
-    }
-  }
-}
-
 #skills{
-  .title-2{
+  .item{
+    background: #eceff1 !important;
+    border-radius: 5px;
     text-align: center;
-    font-weight: 600;
-  }
-  .skills-category{
-    clear: both;
-    &--title{
-      font-size: 13px;
-      font-weight: 700;
-      color: #686666c9;
-      width: 50%;
-      float: left;
-    }
-    &--icons{
-      width: 50%;
-      float: right;
-      .material-icons{
-        font-size: 14px;
-      }
-    }
+    font-weight: 500;
+    box-shadow: 0px 1px 3px #a3a3a3;
+    color: #009688;
+    transition: .3s;
+    padding: 1rem!important;
+    text-align: center;
+    font-weight: 500;
 
+    &:hover{
+      opacity: .6;
+    }
   }
 }
 
@@ -179,99 +177,13 @@ html{
   }
 }
 
-
 #projects{
-
-  .projects-item{
-    .card{
-      height: 170px;
-      transition: all 1s ease;
-      transform: scale(1);
-
-      .title-2{
-        &:hover a{
-          color: grey !important;
-        }
-        &:hover .fa-x{
-          display: block;
-        }
-        .fa-x{
-          display: none;
-          font-size: 15px;
-        }
+  .repos{
+    ul{
+      li{
+        font-family: 'Tenali Ramakrishna', sans-serif;
+        font-size: 16px;
       }
-      .description{
-        font-size: 13px;
-      }
-
-      .footer{
-        display: flex;
-        align-items: center;
-        margin-top: 10px;
-        &-language{
-          display: flex;
-          justify-content: left;
-          align-items: center;
-          margin-right: 20px;
-          .color{
-            width: 12px;
-            height: 12px;
-            border-radius: 100%;
-            position: relative;
-            display: inline-block;
-            margin-right: 7px;
-          }
-          .title{
-
-          }
-        }
-        &-starred, &-fork{
-          display: flex;
-          align-items: center;
-          margin: 0 10px;
-          .icon{margin-right: 3px;font-size: 18px;}
-          .count{font-size: 14px;}
-        }
-      }
-    }
-
-  }
-
-}
-
-
-#gallery{
-  .gallery{
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-width: 33%;
-    -moz-column-width: 33%;
-    column-width: 33%;
-
-    .pics {
-      -webkit-transition: all 1s ease;
-      transition: all 1s ease;
-    }
-
-    .animation {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-    }
-  }
-}
-
-
-@media (max-width: 450px) {
-  #gallery{
-    .gallery {
-      -webkit-column-count: 1;
-      -moz-column-count: 1;
-      column-count: 1;
-      -webkit-column-width: 100%;
-      -moz-column-width: 100%;
-      column-width: 100%;
     }
   }
 }
@@ -297,7 +209,10 @@ html{
   }
 }
 
-
+.text{
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 17px;
+}
 
 @media (max-width: 632px){
   .title-1{
