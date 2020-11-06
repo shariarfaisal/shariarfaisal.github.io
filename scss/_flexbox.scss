@@ -1,0 +1,30 @@
+// @mixin flex-row{
+//
+// }
+// @include flex-row
+
+// %flex-row{
+//   //...
+// }
+// @extend %flex-row
+
+// @function example($a,$b){
+//   @return $a * $b;
+// }
+
+// flex-direction : row, column, column-reverse, row-reverse
+// flex-wrap: wrap, nowrap, wrap-reverse
+// flex-flow: row wrap; shortend flex-direction & flex-wrap
+// justify-content: center, flex-start, flex-end, space-around, space-between
+// align-items: center, flex-start, flex-end, stretch, baseline
+// align-content: center, stretch, flex-start, flex-end, space-around, space-between
+
+// order: 1,2,3,4,5,6,7,8,9,10,11,12
+// flex-grow: 1 to 12
+// flex-shrink: 0
+// flex-basis: **px;
+// flex: flex-grow, flex-shrink, flex-basis ( 0, 0, 250px;)
+// align-self: center, flex-start, flex-end;
+
+
+.flex-center{display: flex;justify-content: center;align-items: center;}

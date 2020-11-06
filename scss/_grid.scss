@@ -1,0 +1,26 @@
+
+//
+// .grid{
+//   display: grid, inline-grid;
+//   grid-column-gap: 50px;
+//   grid-row-gap: 50px;
+//   grid-gap: grid-row-gap, grid-column-gap;
+//   grid-template-columns: auto auto auto auto;
+//   grid-template-columns: 300px auto 400px auto;
+//   grid-template-rows: 80px 200px;
+//   justify-content: space-evenly, space-around, space-between, center, end;
+//   align-content: center, space-around,space-evenly, space-between, start, end;
+// }
+//
+// .grid-item{
+//   grid-column-start: 1;
+//   grid-column-end: 6;
+//   grid-row-start: 1;
+//   grid-row-end: 6;
+//
+//   grid-column: 1/5 or 1/ span 4, 2/ span 3;
+//   grid-row: 1/3, 1/ span 2;
+//   grid-area: header, menu, main, right, footer;
+//   grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end ;
+//
+// }

@@ -1,0 +1,302 @@
+@import 'bootstrap/typography';
+@import 'bootstrap/typography2';
+@import 'bootstrap/row';
+@import 'bootstrap/display';
+
+/*
+font-family: 'Abel', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Tenali Ramakrishna', sans-serif;
+*/
+
+html{
+  scroll-behavior: smooth;
+}
+
+.title-1{
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 35px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.title-2{
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  margin: 0;
+  font-size: 22px;
+}
+.flex-center{display: flex;justify-content: center;align-items: center;}
+.pointer{
+  cursor: pointer;
+}
+
+.customScroll{
+  overflow-y: auto;
+}
+
+.customScroll::-webkit-scrollbar {
+  background: #cccccc;
+  width: 6px;
+}
+
+.customScroll::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+  background: #cccccc;
+}
+
+.text-dark{
+  color: #455a64 !important;
+}
+.text-light{
+  color: #b0bec5 !important;
+}
+
+#profile{
+  width: 100%;
+  .about{
+    .name{
+      font-size: 30px;
+      font-family: monospace;
+      margin-bottom: 0;
+    }
+    .profession{
+      margin: 0;
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+    .about-me{
+      font-family: 'Quicksand', sans-serif;
+      color: #545454;
+    }
+  }
+}
+
+#social_links{
+  ul{
+    li{
+      font-family: 'Tenali Ramakrishna', sans-serif;
+      font-size: 19px;
+      font-weight: 500;
+      a:hover .body{
+        text-decoration: underline;
+      }
+      .fa{
+        width: 20px;
+        font-size: 16px;
+      }
+      .body{
+        color: black;
+      }
+    }
+  }
+}
+
+@media (max-width: 845px){
+  #social_links{
+    ul{
+      li{
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+
+#experences{
+  .item{
+    margin: 10px 0;
+    .icon{font-size: 14px;}
+    &-body{
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 14px;
+      padding-left: 10px;
+    }
+  }
+}
+
+#skills{
+  .title-2{
+    text-align: center;
+    font-weight: 600;
+  }
+  .skills-category{
+    clear: both;
+    &--title{
+      font-size: 13px;
+      font-weight: 700;
+      color: #686666c9;
+      width: 50%;
+      float: left;
+    }
+    &--icons{
+      width: 50%;
+      float: right;
+      .material-icons{
+        font-size: 14px;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 1092px){
+  #skills{
+    .title-2{
+      font-size: 19px;
+    }
+    .skills-category{
+      &--title{
+        font-size: 12px;
+      }
+    }
+    &--icons{
+      .material-icons{
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 845px){
+  #skills{
+    .title-2{
+      text-align: left;
+    }
+    ul{
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+#projects{
+
+  .projects-item{
+    .card{
+      height: 170px;
+      transition: all 1s ease;
+      transform: scale(1);
+
+      .title-2{
+        &:hover a{
+          color: grey !important;
+        }
+        &:hover .fa-x{
+          display: block;
+        }
+        .fa-x{
+          display: none;
+          font-size: 15px;
+        }
+      }
+      .description{
+        font-size: 13px;
+      }
+
+      .footer{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        &-language{
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          margin-right: 20px;
+          .color{
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            position: relative;
+            display: inline-block;
+            margin-right: 7px;
+          }
+          .title{
+
+          }
+        }
+        &-starred, &-fork{
+          display: flex;
+          align-items: center;
+          margin: 0 10px;
+          .icon{margin-right: 3px;font-size: 18px;}
+          .count{font-size: 14px;}
+        }
+      }
+    }
+
+  }
+
+}
+
+
+#gallery{
+  .gallery{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+
+    .pics {
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    .animation {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+}
+
+
+@media (max-width: 450px) {
+  #gallery{
+    .gallery {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      -webkit-column-width: 100%;
+      -moz-column-width: 100%;
+      column-width: 100%;
+    }
+  }
+}
+
+#footer{
+  .footer-box{
+    ul{
+      li{
+        a{
+          letter-spacing: 1px;
+          color: #5f5f5f;
+          font-weight: 500;
+          font-size: 15px;
+          font-family: monospace;
+        }
+        .fa{
+          &:hover{
+            color: #00bcd4 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 632px){
+  .title-1{
+    text-align: center;
+  }
+}
