@@ -30,7 +30,11 @@ html{
 .pointer{
   cursor: pointer;
 }
-
+.hover-link{
+  &:hover{
+    text-decoration: underline;
+  }
+}
 .customScroll{
   overflow-y: auto;
 }
