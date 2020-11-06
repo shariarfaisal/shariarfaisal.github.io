@@ -1,0 +1,234 @@
+
+/*
+font-family: 'Abel', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Tenali Ramakrishna', sans-serif;
+*/
+
+html{
+  scroll-behavior: smooth;
+}
+
+.title-1{
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 38px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.title-2{
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  margin: 0;
+  font-size: 25px;
+}
+
+.title-3{
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  margin: 0;
+  font-size: 20px;
+}
+
+.bg-a{
+  background: #eceff1 !important;
+}
+
+
+.flex-center{display: flex;justify-content: center;align-items: center;}
+
+.pointer{
+  cursor: pointer;
+  &:hover{
+    opacity: .6;
+  }
+}
+
+.hover-link{
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.customScroll{
+  overflow-y: auto;
+}
+
+.customScroll::-webkit-scrollbar {
+  background: #cccccc;
+  width: 6px;
+}
+
+.customScroll::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+  background: #cccccc;
+}
+
+.text-dark{
+  color: #455a64 !important;
+}
+
+.text-light{
+  color: #b0bec5 !important;
+}
+
+#profile{
+  width: 100%;
+  .about{
+    .name{
+      font-size: 30px;
+      font-family: monospace;
+      margin-bottom: 0;
+    }
+    .profession{
+      margin: 0;
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+    .about-me{
+      font-family: 'Quicksand', sans-serif;
+      color: #545454;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+  }
+}
+
+#contact{
+  ul{
+    li{
+      font-family: 'Tenali Ramakrishna', sans-serif;
+      font-size: 19px;
+      font-weight: 500;
+      a:hover .body{
+        text-decoration: underline;
+      }
+      .fa{
+        width: 20px;
+        font-size: 16px;
+      }
+      .body{
+        color: black;
+      }
+    }
+  }
+}
+
+@media (max-width: 845px){
+  #contact{
+    ul{
+      li{
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+
+#skills{
+  .item{
+    background: #eceff1 !important;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0px 1px 3px #a3a3a3;
+    color: #009688;
+    transition: .3s;
+    padding: 1rem!important;
+    text-align: center;
+    font-weight: 500;
+
+    &:hover{
+      opacity: .6;
+    }
+  }
+}
+
+@media (max-width: 1092px){
+  #skills{
+    .title-2{
+      font-size: 19px;
+    }
+    .skills-category{
+      &--title{
+        font-size: 12px;
+      }
+    }
+    &--icons{
+      .material-icons{
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 845px){
+  #skills{
+    .title-2{
+      text-align: left;
+    }
+    ul{
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+#projects{
+  .repos{
+    ul{
+      li{
+        font-family: 'Tenali Ramakrishna', sans-serif;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+#footer{
+  .footer-box{
+    ul{
+      li{
+        a{
+          letter-spacing: 1px;
+          color: #5f5f5f;
+          font-weight: 500;
+          font-size: 15px;
+          font-family: monospace;
+        }
+        .fa{
+          &:hover{
+            color: #00bcd4 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.text{
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 17px;
+}
+
+@media (max-width: 632px){
+  .title-1{
+    text-align: center;
+  }
+}
+
+.slowdown{
+  animation: slowdown .5s ease;
+}
+
+@keyframes slowdown{
+  0%{
+    margin-top: -50px;
+  }
+  100%{
+    margin-top: 0px
+  }
+}
