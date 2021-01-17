@@ -11,7 +11,7 @@ function Profile(props) {
           <div className="about col-md-8">
             <h1 className="name mt-0">Sharia Emon Faisal</h1>
             <p className="profession text-muted">Software Developer.</p>
-            <p className="about-me">A tech enthusiast who is passionate at programming and love to write code, take challanges, solve problems and always curious to explore new things. I am a very optimistic and very open to hearing advice and experiences from anyone.</p>
+            <p className="about-me">A tech enthusiast who is passionate at programming and love to write code, take challanges, problem soliving and always curious to explore new things.</p>
           </div>
         </div>
       </div>
